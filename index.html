@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crea tu cuenta</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Crea tu cuenta para acceder a mis fotos</h1>
+        <form id="loginForm">
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Ingresar</button>
+        </form>
+
+        <div id="additionalForm" class="hidden">
+            <h2>Formulario de pago</h2>
+            <form id="paymentForm">
+                <label for="cardNumber">Número de tarjeta:</label>
+                <input type="text" id="cardNumber" name="cardNumber" required>
+
+                <label for="expiryDate">Fecha de vencimiento:</label>
+                <input type="text" id="expiryDate" name="expiryDate" required>
+
+                <label for="cvv">Código CVV:</label>
+                <input type="text" id="cvv" name="cvv" required>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
